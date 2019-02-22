@@ -1,4 +1,4 @@
-package com.example.todomvp;
+package com.example.todomvp.addedittask;
 
 /**
  * buttons on music player
@@ -16,5 +16,6 @@ public interface AddEditContract {
      */
     interface  Presenter{
         void onButtonClicked();
+        void getData();
     }
 }

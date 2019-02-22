@@ -24,7 +24,7 @@ public interface TaskDataSource {
     /**
     * this will query the db
      */
-   void getTask();
+   void getTask(GetTaskCallback getTaskCallback);
 
     /**
      * this will save the task in db

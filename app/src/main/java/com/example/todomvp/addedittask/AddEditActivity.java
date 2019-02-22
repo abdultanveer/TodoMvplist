@@ -1,9 +1,11 @@
-package com.example.todomvp;
+package com.example.todomvp.addedittask;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.todomvp.R;
 
 public class AddEditActivity extends AppCompatActivity implements AddEditContract.View {
 
@@ -18,7 +20,8 @@ public class AddEditActivity extends AppCompatActivity implements AddEditContrac
 
     public void clickHandler(View view) {
         //1. view: mr presenter someone clicked the button
-        presenter.onButtonClicked();
+       // presenter.onButtonClicked();
+        presenter.getData();
     }
 
     @Override
