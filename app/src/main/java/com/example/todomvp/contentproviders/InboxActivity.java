@@ -32,10 +32,10 @@ public class InboxActivity extends AppCompatActivity {
             //create a cursoradapter with the cursor you got above
         SimpleCursorAdapter cursorAdapter =
                 new SimpleCursorAdapter(this,
-                        android.R.layout.simple_list_item_1,//layout for each row in listview
+                        android.R.layout.simple_list_item_2,//layout for each row in listview
                         cursor, // data
-                        new String[]{"body"},//name of the column in inbox table
-                        new int[]{android.R.id.text1}); //id of tv in simple list item layout
+                        new String[]{"body","address"},//name of the column in inbox table
+                        new int[]{android.R.id.text1,android.R.id.text2}); //id of tv in simple list item layout
             //set the adapter on the listtview
         inboxListView.setAdapter(cursorAdapter);
     }
